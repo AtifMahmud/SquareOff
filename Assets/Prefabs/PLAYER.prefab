@@ -293,7 +293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2834759253199463560
 Transform:
   m_ObjectHideFlags: 0
@@ -324,6 +324,7 @@ GameObject:
   - component: {fileID: 5713174718894002916}
   - component: {fileID: 5637358905097732426}
   - component: {fileID: 4788249845758246064}
+  - component: {fileID: 5189228932096844489}
   m_Layer: 0
   m_Name: PLAYER
   m_TagString: Untagged
@@ -453,6 +454,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   passTrajectoryMarker: {fileID: 3951477450010917703}
+  playerData: {fileID: 5189228932096844489}
+--- !u!114 &5189228932096844489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7356926117380659485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff198a312ec7f24ab23948fdab2d4ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPossessingBall: 0
 --- !u!1 &7859806224971513650
 GameObject:
   m_ObjectHideFlags: 0

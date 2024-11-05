@@ -140,6 +140,10 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 5189228932096844489, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
+      propertyPath: isPossessingBall
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5637358905097732426, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: maxForwardMovement
       value: 2
