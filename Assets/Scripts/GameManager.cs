@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
 
     public bool passTrajectorySet = false;
 
+    public Ball ball;
+    public Vector2 kickDirection;
+
     private static GameManager _instance;
     public static GameManager Instance
     {
@@ -23,6 +26,14 @@ public class GameManager : MonoBehaviour
                 _instance = obj.AddComponent<GameManager>();
             }
             return _instance;
+        }
+    }
+
+    private void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
         }
     }
 
@@ -42,5 +53,11 @@ public class GameManager : MonoBehaviour
     public void LockPassTrajectory()
     {
         passTrajectorySet = true;
+    }
+
+    public void KickBall()
+    {
+        Debug.Log("Direction " + kickDirection);
+        ball.Kick(kickDirection);
     }
 }

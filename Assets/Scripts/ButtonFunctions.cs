@@ -8,4 +8,9 @@ public class ButtonFunctions : MonoBehaviour
     {
         GameManager.Instance.LockPassTrajectory();
     }
+
+    public void KickBall()
+    {
+        GameManager.Instance.KickBall();
+    }
 }
