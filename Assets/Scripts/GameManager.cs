@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public GameObject currentSelected;
 
+    public bool passTrajectorySet = false;
+
     private static GameManager _instance;
     public static GameManager Instance
     {
@@ -35,5 +37,10 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Current selected player is NULL");
         }
+    }
+
+    public void LockPassTrajectory()
+    {
+        passTrajectorySet = true;
     }
 }

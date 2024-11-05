@@ -16,7 +16,11 @@ public class RotatePassTrajectory : MonoBehaviour
             {
                 passTrajectoryMarker.SetActive(true);
             }
-            passTrajectoryMarker.transform.Rotate(0, 180 * Time.deltaTime, 0);
+
+            if (!GameManager.Instance.passTrajectorySet)
+            {
+                passTrajectoryMarker.transform.Rotate(0, 180 * Time.deltaTime, 0);
+            }
         }
     }
 }
