@@ -10,6 +10,11 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public GameObject currentSelected;
 
+    public bool passTrajectorySet = false;
+
+    public Ball ball;
+    public Vector2 kickDirection;
+
     private static GameManager _instance;
     public static GameManager Instance
     {
@@ -24,16 +29,33 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+        }
+    }
+
     public void Update()
     {
-        Debug.Log("isPlayerSelected " + isPlayerSelected);
         if (currentSelected != null)
         {
-            Debug.Log("Current selected player is: " + currentSelected.name);
+
         }
         else
         {
-            Debug.Log("Current selected player is NULL");
+
         }
+    }
+
+    public void LockPassTrajectory()
+    {
+        passTrajectorySet = true;
+    }
+
+    public void KickBall()
+    {
+        ball.Kick(kickDirection);
     }
 }
