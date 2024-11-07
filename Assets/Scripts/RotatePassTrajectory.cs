@@ -5,12 +5,12 @@ using UnityEngine;
 public class RotatePassTrajectory : MonoBehaviour
 {
     public GameObject passTrajectoryMarker;
-    public PlayerData playerData;
+    public bool isPossessing;
 
     // Update is called once per frame
     void Update()
     {
-        if (playerData.isPossessingBall)
+        if (isPossessing)
         {
             if (!passTrajectoryMarker.activeInHierarchy)
             {

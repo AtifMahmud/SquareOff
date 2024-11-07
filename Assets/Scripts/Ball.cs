@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    private float kickForce = 10f;
+    private float kickForce = 60f;
     public float deceleration = 0.9f;
+    public GameManager.GridSquare position;    
     private Vector2 velocity;
 
     public void Kick(Vector2 direction)
@@ -22,9 +23,8 @@ public class Ball : MonoBehaviour
         while (velocity.magnitude > 0.00001f)
         {
             transform.position += new Vector3(velocity.x, 0, velocity.y) * Time.deltaTime;
-            Debug.Log("Adding position: " + new Vector3(direction.x, 0, direction.y) * Time.deltaTime);
             velocity *= deceleration;
-            yield return null;
+            yield return new WaitForSeconds(0.02f);
         }
         velocity = Vector2.zero;
     }

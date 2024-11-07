@@ -6,5 +6,4 @@ public class PlayerState
 {
     public GameManager.GridSquare position;
     public bool isPossessing;
-    PlayerAttribute playerAttribute;
 }
