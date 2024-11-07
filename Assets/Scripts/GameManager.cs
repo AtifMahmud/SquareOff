@@ -39,14 +39,13 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log("isPlayerSelected " + isPlayerSelected);
         if (currentSelected != null)
         {
-            Debug.Log("Current selected player is: " + currentSelected.name);
+
         }
         else
         {
-            Debug.Log("Current selected player is NULL");
+
         }
     }
 
@@ -57,7 +56,6 @@ public class GameManager : MonoBehaviour
 
     public void KickBall()
     {
-        Debug.Log("Direction " + kickDirection);
         ball.Kick(kickDirection);
     }
 }
