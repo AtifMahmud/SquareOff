@@ -184,7 +184,6 @@ GameObject:
   - component: {fileID: 7833050417661969114}
   - component: {fileID: 3959427097704229549}
   - component: {fileID: 6982022139934937008}
-  - component: {fileID: 8881736583107292058}
   m_Layer: 0
   m_Name: PassTrajectory
   m_TagString: Untagged
@@ -257,27 +256,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8881736583107292058
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2770427027047527046}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3951477450010917703
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,10 +299,8 @@ GameObject:
   - component: {fileID: 8266728128292871460}
   - component: {fileID: 3169895691693343557}
   - component: {fileID: 1073649802340236107}
-  - component: {fileID: 5713174718894002916}
   - component: {fileID: 5637358905097732426}
   - component: {fileID: 4788249845758246064}
-  - component: {fileID: 5189228932096844489}
   m_Layer: 0
   m_Name: PLAYER
   m_TagString: Untagged
@@ -400,29 +376,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5713174718894002916
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7356926117380659485}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5637358905097732426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,20 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   passTrajectoryMarker: {fileID: 3951477450010917703}
-  playerData: {fileID: 5189228932096844489}
---- !u!114 &5189228932096844489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7356926117380659485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff198a312ec7f24ab23948fdab2d4ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPossessingBall: 0
+  isPossessing: 0
 --- !u!1 &7859806224971513650
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,7 +421,7 @@ GameObject:
   - component: {fileID: 1778507879004864985}
   - component: {fileID: 8288050503434486171}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Marker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

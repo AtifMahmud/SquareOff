@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Square
+  - Grid
   layers:
   - Default
   - TransparentFX
