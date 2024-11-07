@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
         A2, B2, C2, D2, E2, F2,
         A1, B1, C1, D1, E1, F1
     };
+    public bool passTrajectorySet = false;
+
+    public Ball ball;
+    public Vector2 kickDirection;
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -36,16 +40,33 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+        }
+    }
+
     public void Update()
     {
-        Debug.Log("isPlayerSelected " + isPlayerSelected);
         if (currentSelected != null)
         {
-            Debug.Log("Current selected player is: " + currentSelected.name);
+
         }
         else
         {
-            Debug.Log("Current selected player is NULL");
+
         }
+    }
+
+    public void LockPassTrajectory()
+    {
+        passTrajectorySet = true;
+    }
+
+    public void KickBall()
+    {
+        ball.Kick(kickDirection);
     }
 }
