@@ -20,9 +20,7 @@ public class RotatePassTrajectory : MonoBehaviour
             if (!GameManager.Instance.passTrajectorySet)
             {
                 passTrajectoryMarker.transform.Rotate(0, 180 * Time.deltaTime, 0);
-                // Debug.Log("Pass forward: " + passTrajectoryMarker.transform.forward);
-                GameManager.Instance.kickDirection = new Vector2(passTrajectoryMarker.transform.forward.z, passTrajectoryMarker.transform.forward.x);
-                // Debug.Log("IN GAMEMANAGER, KICK DIRECTION IS " + GameManager.Instance.kickDirection);
+                GameManager.Instance.kickDirection = new Vector2(passTrajectoryMarker.transform.forward.x, passTrajectoryMarker.transform.forward.z);
             }
         }
     }

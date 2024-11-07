@@ -19,7 +19,7 @@ public class Ball : MonoBehaviour
         velocity = direction.normalized * kickForce;
         while (velocity.magnitude > 0.1f)
         {
-            transform.position += (Vector3)velocity * Time.deltaTime;
+            transform.position += new Vector3(direction.x, 0, direction.y) * Time.deltaTime;
             velocity *= deceleration;
             yield return null;
         }
