@@ -152,6 +152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RED_LW
       objectReference: {fileID: 0}
+    - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8266728128292871460, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.4809068
@@ -234,6 +238,10 @@ PrefabInstance:
     - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_Name
       value: BLUE_LS
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8266728128292871460, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -323,6 +331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BLUE_LWB
       objectReference: {fileID: 0}
+    - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8266728128292871460, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.2173395
@@ -406,6 +418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BLUE_RS
       objectReference: {fileID: 0}
+    - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8266728128292871460, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.20733961
@@ -488,6 +504,10 @@ PrefabInstance:
     - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_Name
       value: RED_LB
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8266728128292871460, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -674,6 +694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RED_RB
       objectReference: {fileID: 0}
+    - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8266728128292871460, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.499093
@@ -756,6 +780,10 @@ PrefabInstance:
     - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_Name
       value: BLUE_RWB
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8266728128292871460, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -983,6 +1011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayerSelected: 0
+  currentSelected: {fileID: 0}
 --- !u!1001 &1221438500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1008,6 +1037,10 @@ PrefabInstance:
     - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_Name
       value: BLUE_GOALIE
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8266728128292871460, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1290,6 +1323,10 @@ PrefabInstance:
     - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_Name
       value: RED_RW
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8266728128292871460, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1934,6 +1971,10 @@ PrefabInstance:
     - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_Name
       value: RED_GOALIE
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356926117380659485, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8266728128292871460, guid: 1bbf9c9ed7ecd6b4ab09dbbcdbaacca6, type: 3}
       propertyPath: m_LocalPosition.x
